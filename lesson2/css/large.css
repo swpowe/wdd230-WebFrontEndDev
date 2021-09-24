@@ -1,5 +1,10 @@
 @media only screen and (min-width: 1028px) {
     body {
-        background-color: yellow;
+        font-size: 2rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
