@@ -18,8 +18,14 @@ header {
     background-color: #0097e9;
 }
 
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+
+header h1 {margin: 0; font-size: 1.3rem;}
+header h2 {margin: 0; font-weight: normal; font-size: 1rem;}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -34,7 +40,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #eee;
+    color: black;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -59,7 +65,7 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
+    background-color: #0097e9;
     padding: .5rem 2%;
     text-align: center;
 }
