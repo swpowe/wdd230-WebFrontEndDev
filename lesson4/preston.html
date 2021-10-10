@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header>
@@ -12,12 +18,15 @@
       <!-- site name -->
       <!-- motto -->
       <img src="images/logo.png" alt="site logo" class="header-logo" />
-      <h1 class="header-title">Oh the weather outside</h1>
-      <h2 class="header-slogan">What's your weather today?</h2>
+      <section>
+        <h1 class="header-title">The weather outside</h1>
+        <h2 class="header-slogan">What's <em>your</em> weather today?</h2>
+      </section>
     </header>
     <nav>
       <!-- Home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery, Menu -->
-      <ul>
+      <button onclick="toggleMenu()">&#9776</button>
+      <ul id="primary-nav" class="">
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="preston.html">Preston</a></li>
         <li><a href="soda-springs.html">Soda Springs</a></li>
@@ -32,38 +41,41 @@
       <!-- centered in page -->
       <h1 class="main-town-name">Preston</h1>
       <section class="main-summary">
-        <h3 class="main-summary-heading">Weather Summary</h3>
-        <ul>
-          <li>High: <span class="high-value"></span></li>
-          <li>Low: <span class="low-value"></span></li>
-          <li>Wind: <span class="wind-value"></span></li>
-        </ul>
+        <img class="main-summary-hero-image" src="https://www.prestonidaho.net/wp-content/uploads/2017/07/slider1.jpg" alt="city image">
+        <section class="main-summary-items">
+          <h3 class="main-summary-heading">Weather Summary</h3>
+          <ul>
+            <li>High: <span class="high-value"></span></li>
+            <li>Low: <span class="low-value"></span></li>
+            <li>Wind: <span class="wind-value"></span></li>
+          </ul>
+        </section>
       </section>
       <section class="main-forecast">
         <h2 class="main-forecast-heading">Five Day Forecast</h2>
         <section class="main-forecast-table">
-          <div class="forecast-table-day1">
-            <h3 class="forecast-table-day">Day 1</h3>
+          <div class="forecast-table-day">
+            <h3 class="forecast-table-item">Day 1</h3>
             <img src="images/logo.png" alt="" class="forecast-table-img" />
             <span class="forecast-table-temp">90</span>
           </div>
-          <div class="forecast-table-day2">
-            <h3 class="forecast-table-day">Day 1</h3>
+          <div class="forecast-table-day">
+            <h3 class="forecast-table-item">Day 1</h3>
             <img src="images/logo.png" alt="" class="forecast-table-img" />
             <span class="forecast-table-temp">90</span>
           </div>
-          <div class="forecast-table-day3">
-            <h3 class="forecast-table-day">Day 1</h3>
+          <div class="forecast-table-day">
+            <h3 class="forecast-table-item">Day 1</h3>
             <img src="images/logo.png" alt="" class="forecast-table-img" />
             <span class="forecast-table-temp">90</span>
           </div>
-          <div class="forecast-table-day4">
-            <h3 class="forecast-table-day">Day 1</h3>
+          <div class="forecast-table-day">
+            <h3 class="forecast-table-item">Day 1</h3>
             <img src="images/logo.png" alt="" class="forecast-table-img" />
             <span class="forecast-table-temp">90</span>
           </div>
-          <div class="forecast-table-day5">
-            <h3 class="forecast-table-day">Day 1</h3>
+          <div class="forecast-table-day">
+            <h3 class="forecast-table-item">Day 1</h3>
             <img src="images/logo.png" alt="" class="forecast-table-img" />
             <span class="forecast-table-temp">90</span>
           </div>
@@ -71,7 +83,7 @@
       </section>
       <section class="main-article">
         <h2 class="main-article-heading">Article Title</h2>
-        <img src="images/logo" alt="" class="main-article-img" />
+        
         <p class="main-article-passage">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
           eveniet quas necessitatibus odit, eius quasi earum cum quidem quo sed
@@ -97,6 +109,7 @@
           officia veritatis totam dignissimos commodi dolorum error hic labore
           nam ex ipsa molestiae aperiam accusamus.
         </p>
+        <img src="https://www.prestonidaho.net/wp-content/uploads/2017/07/slider1.jpg" alt="" class="main-article-img" />
       </section>
       <section class="main-contact">
         <h2 class="main-contact-heading">Contact Us</h2>
@@ -115,39 +128,40 @@
             <h3 class="main-contact-email-heading">Email:</h3>
             <p>contact@mail.com</p>
           </section>
-          <section class="main-contact-map">
-            <div class="mapouter">
-              <div class="gmap_canvas">
-                <iframe
-                  width="300"
-                  height="250"
-                  id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  frameborder="0"
-                  scrolling="no"
-                  marginheight="0"
-                  marginwidth="0"
-                ></iframe
-                ><a href="https://123movies-to.org"></a><br /><style>
-                  .mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 250px;
-                    width: 300px;
-                  }</style
-                ><a href="https://www.embedgooglemap.net"
-                  >google map location for website</a
-                ><style>
-                  .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 250px;
-                    width: 300px;
-                  }
-                </style>
-              </div>
+          
+        </section>
+        <section class="main-contact-map">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="300"
+                height="250"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><a href="https://123movies-to.org"></a><br /><style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 250px;
+                  width: 300px;
+                }</style
+              ><a href="https://www.embedgooglemap.net"
+                >google map location for website</a
+              ><style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 250px;
+                  width: 300px;
+                }
+              </style>
             </div>
-          </section>
+          </div>
         </section>
       </section>
     </main>

@@ -1,0 +1,24 @@
+@media only screen and (min-width: 560px) {
+  body {
+    font-size: 1.5rem;
+    max-width: 70rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-forecast-table {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .forecast-table-day {
+    display: grid;
+  }
+
+  .forecast-table-img {
+    width: 30%;
+  }
+}
