@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -136,8 +140,6 @@ main li {
 }
 
 .main-contact-map {
-  grid-column: 1/2;
-  grid-row: 3;
   margin-left: -8px;
 }
 

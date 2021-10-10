@@ -4,10 +4,19 @@
     max-width: 70rem;
   }
 
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  nav button {
+      display: none;
   }
+
+  #primary-nav {
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  #primary-nav li {
+      list-style-type: none;
+  }
+
   .main-forecast-table {
     border: 1px solid black;
     display: grid;
@@ -20,5 +29,9 @@
 
   .forecast-table-img {
     width: 30%;
+  }
+
+  .main-contact-map {
+      margin-left: 25%;
   }
 }
