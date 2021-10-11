@@ -1,0 +1,37 @@
+@media only screen and (min-width: 560px) {
+  body {
+    font-size: 1.5rem;
+    max-width: 70rem;
+  }
+
+  nav button {
+      display: none;
+  }
+
+  #primary-nav {
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  #primary-nav li {
+      list-style-type: none;
+  }
+
+  .main-forecast-table {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .forecast-table-day {
+    display: grid;
+  }
+
+  .forecast-table-img {
+    width: 30%;
+  }
+
+  .main-contact-map {
+      margin-left: 25%;
+  }
+}
