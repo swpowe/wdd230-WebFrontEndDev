@@ -1,0 +1,77 @@
+/* Style for small */
+/* These styles apply until a media query is triggered. */
+
+/* #region small styles - default */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+
+section {
+  background-color: rgb(50, 225, 184);
+  height: 50px;
+  position: relative;
+  width: 50px;
+}
+
+.section-one {
+  position: relative;
+}
+
+#sidebar {
+  background-color: rgb(196, 225, 50);
+  position: absolute;
+  right: 0;
+  width: 25%;
+  height: 45%;
+}
+
+footer {
+  background-color: rgb(50, 225, 184);
+  height: 50px;
+  width: 100%;
+}
+
+/* #endregion */
+
+/* #region 600px - 767px  */
+@media only screen and (min-width: 600px) {
+  main {
+    height: 90vh;
+    flex-direction: row;
+  }
+  section {
+    background-color: rgb(225, 50, 91);
+    height: 80px;
+    width: 120px;
+  }
+
+  #sidebar {
+    left: 0;
+    top: 200px;
+  }
+}
+/* #endregion */
+
+/* 768px -  */
+@media only screen and (min-width: 768px) {
+    section {
+        background-color: rgb(123, 225, 50);
+        border-radius: 8px;
+        height: 100px;
+        width: 150px;
+    }
+
+    #sidebar {
+        background-color: rgb(225, 50, 161);
+        border-radius: 0 20px 20px 0;
+        height: 65%;
+    }
+
+    footer {
+        background-color: rgb(187, 50, 225);
+        height: 90px;
+    }
+}
