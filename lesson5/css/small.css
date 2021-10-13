@@ -73,6 +73,11 @@ nav a:hover {
   padding-left: 20px;
 }
 
+#banner {
+  display: none;
+  padding: 10px;
+}
+
 .main-summary {
   position: relative;
 }
