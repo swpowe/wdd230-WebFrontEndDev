@@ -1,37 +1,112 @@
-@media only screen and (min-width: 560px) {
+@media screen and (min-width: 560px) {
   body {
     font-size: 1.5rem;
     max-width: 70rem;
   }
 
   nav button {
-      display: none;
+    display: none;
   }
 
   #primary-nav {
-      display: flex;
-      justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #primary-nav li{
+    display:inline-block; 
+    padding:0 7px; 
+    position:relative;
+  }
+
+  #primary-nav li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-3px; 
+    top:0; 
+    height:100%;
   }
 
   #primary-nav li {
-      list-style-type: none;
+    list-style-type: none;
+  }
+
+  .main-summary-items {
+    top: 40px;
+    left: 10px;
+    position: absolute;
+    max-width: 35%;
+  }
+
+  .main-summary-hero-image {
+    margin: 3%;
+    max-width: 94%;
+  }
+
+  .main-forecast {
+    display: block;
+    margin: 20px;
+  }
+
+  .main-forecast-heading {
+    padding-bottom: 10px;
   }
 
   .main-forecast-table {
-    border: 1px solid black;
+    /* border: 1px solid rgb(174, 174, 174); */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 10px;
+  }
+
+  #main-forecast-table-header {
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: center;
+  }
+
+  h3.forecast-table-item {
+    background-color: rgb(174, 174, 174);
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .forecast-table-temp {
+    font-size: 0.8rem;
   }
 
   .forecast-table-day {
+    border: 1px solid rgb(174, 174, 174);
     display: grid;
+    justify-items: center;
+    grid-row: 2;
+    padding-bottom: 5px;
   }
 
   .forecast-table-img {
-    width: 30%;
+    padding-top: 10px;
+    width: 40%;
+  }
+
+  .main-article-passage {
+    position:relative;
+  }
+
+  .main-article-img {
+    float: right;
+    width: 280px;
+  }
+
+  .main-contact-email {
+    padding-top: 10px;
   }
 
   .main-contact-map {
-      margin-left: 25%;
+    margin-top: 40px;
+    justify-self: center;
   }
 }
