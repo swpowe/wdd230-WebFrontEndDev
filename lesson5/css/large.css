@@ -3,4 +3,8 @@
     font-size: 2rem;
     max-width: 1028px;
   }
+
+  .main-contact-email {
+    padding-top: 25px;
+  }
 }
