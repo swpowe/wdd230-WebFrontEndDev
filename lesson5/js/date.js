@@ -5,6 +5,8 @@ const week = date.toDateString();
 // Thursday, 6 April 2020
 document.getElementById("date").innerText = `${week}`;
 
-if(day === 5) {
+console.log("Today is: " + day);
+
+if(day === 6 || day === 5) {
     document.getElementById('banner').style.display = "block";
 }
