@@ -7,6 +7,8 @@
 
 body {
   font-family: "Lato", sans-serif;
+  max-width: 1600px;
+  margin: auto;
 }
 
 header {
@@ -150,6 +152,10 @@ main li {
   grid-row: 3 / 4;
   padding-top: 10px;
   margin-left: -5px;
+}
+
+ifram {
+  max-width: 200px;
 }
 
 footer {
