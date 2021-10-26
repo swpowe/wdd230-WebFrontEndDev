@@ -154,9 +154,49 @@ main li {
   margin-left: -5px;
 }
 
-ifram {
+iframe {
   max-width: 200px;
 }
+
+/* Gallery Specific */
+.gallery-title {
+  text-align: center;
+}
+
+.gallery-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+figure {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+figure img {
+  box-sizing: border-box;
+  width: 0px;
+  min-width: 100%;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+figcaption {
+  font-size: 1rem;
+  padding: 5px;
+}
+
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+/* img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+} */
 
 footer {
   background-color: rgba(40, 40, 40, 0.8);
