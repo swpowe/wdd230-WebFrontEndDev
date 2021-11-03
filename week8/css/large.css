@@ -1,0 +1,36 @@
+@media only screen and (min-width: 1028px) {
+  body {
+    font-size: 2rem;
+    max-width: 1028px;
+  }
+
+  .main-contact-email {
+    padding-top: 25px;
+  }
+
+  /* .main-contact-map {
+    padding-top: 40px;
+  } */
+
+  /*----------- MAIN --------------*/
+
+form label.sbs {
+  padding: 0.4rem 0;;
+}
+
+  .gallery-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    justify-content: center;
+  }
+
+  figure:hover {
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  footer {
+    position: relative;
+    top: 120px;
+  }
+}
