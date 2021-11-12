@@ -155,11 +155,12 @@
   /* #region Home Page Specific */
   #main-section {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 5fr 3fr;
   }
 
   #sidebar {
-    display: inline;
+    display: block;
+    grid-column: 2;
     margin: 10px;
     padding-top: 10px;
   }
@@ -188,7 +189,6 @@
   
   #pages {
     display: grid;
-
   }
   
   .town-page-heading {
@@ -207,6 +207,16 @@
   .town-page-info h2 {
     font-size: 1.5rem;
   }
+
+  #idaho-graphic {
+    /* background-color: blue; */
+    grid-column: 2;
+    max-height: 10%;
+    padding-top: 30px;
+    padding-left: 50px;
+  }
+
+
 
 
 
