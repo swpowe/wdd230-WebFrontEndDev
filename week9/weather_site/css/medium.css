@@ -150,6 +150,66 @@
 
   footer {
     position: relative;
-    top: 400px;
   }
+
+  /* #region Home Page Specific */
+  #main-section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  #sidebar {
+    display: inline;
+    margin: 10px;
+    padding-top: 10px;
+  }
+
+  #sidebar li {
+    padding-top: 10px;
+  }
+
+  #sidebar > h2.heading.officials {
+    margin-top: 30px;
+  }
+
+
+  #sidebar a {
+    padding-left: 50px;
+    text-decoration: none;
+  }
+
+  .home-page {
+  }
+  .home-page h1 {
+  }
+  
+  .home-page-hero-img {
+  }
+  
+  #pages {
+    display: grid;
+
+  }
+  
+  .town-page-heading {
+    margin-top: 20px;
+  }
+  
+  #pages img {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  
+  .town-page-info {
+    margin-bottom: 0;
+  }
+  
+  .town-page-info h2 {
+    font-size: 1.5rem;
+  }
+
+
+
+
+  /* #endregion */
 }

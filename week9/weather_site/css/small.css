@@ -298,5 +298,9 @@ footer {
   padding-bottom: 20px;
 }
 
+#sidebar {
+  display: none;
+}
+
 
 /* #endregion */
