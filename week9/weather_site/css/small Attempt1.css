@@ -240,7 +240,7 @@ footer {
 
 /* #region Home Page Specific */
 .home-page {
-  max-width: 100%;
+  
   display: grid;
   /* grid-template-columns: 1028px; */
   /* display: 100%; */
