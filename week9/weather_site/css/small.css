@@ -180,7 +180,7 @@ form div {
 
 form label.top input:not([type="range"]),
 form label.top select {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   display: block;
   font-size: 1rem;
   border: solid 1px #999;
@@ -299,7 +299,28 @@ footer {
 }
 
 #sidebar {
-  display: none;
+  /* display: none; */
+}
+
+#sidebar li {
+  padding-top: 10px;
+}
+
+#sidebar > h2.heading.officials {
+  margin-top: 30px;
+}
+
+
+#idaho-graphic {
+  /* background-color: blue; */
+  grid-column: 2;
+  max-height: 300px;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+#sidebar a {
+  display: block;
 }
 
 
