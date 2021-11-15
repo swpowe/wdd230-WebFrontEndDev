@@ -1,4 +1,4 @@
-const apiURL = "http://api.openweathermap.org/data/2.5/";
+const apiURL = "https://api.openweathermap.org/data/2.5/";
 const apiKEY = "c9d68fbf2ae49e0738af3fb4229133ea";
 const cityId = [5604473];
 
