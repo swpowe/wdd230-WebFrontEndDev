@@ -39,20 +39,28 @@ fetch(urlForecast)
       // console.log(item.dt_txt)
       return item.dt_txt.includes("18:00:00");
     });
-    console.log(result);
+    // console.log(result);
 
+    // Swith out table Icons
+    for (let i = 0; i < 5; i++) {
       const imagesrc =
-        "https://openweathermap.org/img/w/" + result[0].weather[0].icon + ".png"; // note the concatenation
-      const desc = result[0].weather[0].description; // note how we reference the weather array
-      document.getElementById("forecast-table-day1-img").textContent = imagesrc; // informational specification only
-      document.getElementById("forecast-table-day1-img").setAttribute("src", imagesrc); // focus on the setAttribute() method
-      document.getElementById("forecast-table-day1-img").setAttribute("alt", desc);
+        "https://openweathermap.org/img/w/" +
+        result[i].weather[0].icon +
+        ".png"; // note the concatenation
+      const desc = result[i].weather[0].description; // note how we reference the weather array
+      document.getElementById(`forecast-table-day${i+1}-img`).textContent = imagesrc; // informational specification only
+      document
+        .getElementById(`forecast-table-day${i+1}-img`)
+        .setAttribute("src", imagesrc); // focus on the setAttribute() method
+      document
+        .getElementById(`forecast-table-day${i+1}-img`)
+        .setAttribute("alt", desc);
 
-    // Table Spans and img
-    // document.getElementById("forecast-table-day1-img").setAttribute("src");
-    document.getElementById(
-      "forecast-table-day1-temp"
-    ).textContent = `${Math.round(result[0].main.temp)}\xB0`;
+      // Table Spans and img
+      document.getElementById(
+        `forecast-table-day${i+1}-temp`
+      ).textContent = `${Math.round(result[i].main.temp)}\xB0`;
+    }
   });
 
 //   document.getElementById("current-temp").textContent = jsObject.main.temp;
