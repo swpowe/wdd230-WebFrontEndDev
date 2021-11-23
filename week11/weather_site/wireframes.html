@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframes</title>
+
+    <script src="js/nav-toggle.js"></script>
+
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet"> -->
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="site logo" class="header-logo" />
+      <section>
+        <h1 class="header-title">The weather outside</h1>
+        <h2 class="header-slogan">What's <em>your</em> weather today?</h2>
+      </section>
+    </header>
+    <nav>
+      <!-- Home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery, Menu -->
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primary-nav" class="hide">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="storm-center.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="wireframes">
+        <img src="images/website homepage wireframe - mobile.png" alt="mobile site wireframe">
+        <img src="images/website homepage wireframe - desktop.png" alt="mobile site wireframe">
+    </main>
+    <footer>
+      <p>&copy; Spencer Powell &bull; <span id="date">DATE</span></p>
+      <p>Days since last visit: <span id="visit">0</span></p>
+    </footer>
+    <script src="js/home-page-data.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/visit.js"></script>
+  </body>
+</html>

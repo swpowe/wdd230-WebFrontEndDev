@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preston Home Page</title>
+
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/nav-toggle.js"></script>
+
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet"> -->
+  </head>
+  <body>
+    <header>
+      <!-- logo -->
+      <!-- site name -->
+      <!-- motto -->
+      <img src="images/logo.png" alt="site logo" class="header-logo" />
+      <section>
+        <h1 class="header-title">The weather outside</h1>
+        <h2 class="header-slogan">What's <em>your</em> weather today?</h2>
+      </section>
+    </header>
+    <nav>
+      <!-- Home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery, Menu -->
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primary-nav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="storm-center.html">Storm Center</a></li>
+        <li><a class="active" href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="main-gallery">
+      <!-- max 70rem -->
+      <!-- centered in page -->
+      <h1 class="gallery-title">Weather Gallery</h1>
+      <section class="gallery-view">
+        <figure>
+          <img
+            src="images/placeholder.jpg" data-src="https://source.unsplash.com/200x150/?lightning" loading="lazy"
+            alt="Lightning"
+          />
+          <figcaption>Lightning is amazing to see.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder.jpg" data-src="https://source.unsplash.com/200x150/?rain" loading="lazy"
+            alt="rain"
+          />
+          <figcaption>rain is amazing to see.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder.jpg" data-src="https://source.unsplash.com/200x150/?snow" loading="lazy"
+            alt="snow"
+          />
+          <figcaption>snow is amazing to see.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder.jpg" data-src="https://source.unsplash.com/200x150/?tornado,storm" loading="lazy"
+            alt="tornado"
+          />
+          <figcaption>tornado is amazing to see.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder.jpg" data-src="https://source.unsplash.com/200x150/?rainbow,storm,rain,sky" loading="lazy"
+            alt="rainbow"
+          />
+          <figcaption>rainbow is amazing to see.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder.jpg" data-src="https://source.unsplash.com/200x150/?thunderstorm" loading="lazy"
+            alt="thunderstorm"
+          />
+          <figcaption>thunderstorm is amazing to see.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder.jpg" data-src="https://source.unsplash.com/200x150/?sandstorm" loading="lazy"
+            alt="sandstorm"
+          />
+          <figcaption>sandstorm is amazing to see.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder.jpg" data-src="https://source.unsplash.com/200x150/?hurricane,tropical cylcone" loading="lazy"
+            alt="hurricane"
+          />
+          <figcaption>hurricane is amazing to see.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/placeholder.jpg" data-src="https://source.unsplash.com/200x150/?flood,weather,flashflood" loading="lazy"
+            alt="flood"
+          />
+          <figcaption>flood is amazing to see.</figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <!-- max 70rem -->
+      <!-- centered in page -->
+      <!-- date in JS -->
+      <p>&copy; Spencer Powell &bull; <span id="date">DATE</span></p>
+      <p>Days since last visit: <span id="visit"></span></p>
+    </footer>
+
+    <script src="js/date.js"></script>
+    <script src="js/lazy-load-video.js"></script>
+    <script src="js/visit.js"></script>
+    
+  </body>
+</html>
