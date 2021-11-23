@@ -92,7 +92,7 @@ const data = {
     ],
   };
 
-const root = document.getElementById('main-events-heading');
+const root = document.getElementById('main-events');
 const page = window.location.pathname;
 let townIndex = 0;
 
