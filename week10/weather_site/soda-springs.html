@@ -1,12 +1,155 @@
+<!-- Page v1.0 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    soda springs
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soda Springs Home Page</title>
+
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/nav-toggle.js"></script>
+
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet"> -->
+    
+  </head>
+  <body>
+    <header>
+      <!-- logo -->
+      <!-- site name -->
+      <!-- motto -->
+      <img src="images/logo.png" alt="site logo" class="header-logo" />
+      <section>
+        <h1 class="header-title">The weather outside</h1>
+        <h2 class="header-slogan">What's <em>your</em> weather today?</h2>
+      </section>
+    </header>
+    <nav>
+      <!-- Home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery, Menu -->
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primary-nav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="preston.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="storm-center.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- max 70rem -->
+      <!-- centered in page -->
+      <h1 class="main-town-name">Preston</h1>
+      <p id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+      <section class="main-summary">
+        <picture>
+          <source media="(max-width: 200px)" srcset="images/franklin_small200.jpg">
+          <source media="(max-width: 500px)" srcset="images/franklin_mediumsmall500.jpg">
+          <source media="(max-width: 800px)" srcset="images/franklin_medium800.jpg">
+          <img class="main-summary-hero-image" src="images/franklin_large1100.jpeg" alt="city image">
+        </picture>
+        <section class="main-summary-items">
+          <h2 class="main-summary-heading">Weather Summary</h2>
+          <ul>
+            <li>Currently: <span id="current-value">Rainy</span></li>
+            <li>High: <span id="high-value">45</span>&deg; F</li>
+            <li>Wind Chill: <span id="wind-chill-value">00</span></li>
+            <li>Humidity: <span id="humidity-value">95</span>%</li>
+            <li>Wind Speed: <span id="wind-value">2</span> mph</li>
+          </ul>
+        </section>
+      </section>
+      <section class="main-forecast">
+        <h2 class="main-forecast-heading">Five Day Forecast</h2>
+        <section class="main-forecast-table">
+          <div class="forecast-table-day">
+            <h3 class="forecast-table-item">Monday</h3>
+            <img id="forecast-table-day1-img" src="images/logo.png" alt="" class="forecast-table-img" />
+            <span id="forecast-table-day1-temp" class="forecast-table-temp">45&deg;/45&deg;</span>
+          </div>
+          <div class="forecast-table-day">
+            <h3 class="forecast-table-item">Tuesday</h3>
+            <img id="forecast-table-day2-img" src="images/logo.png" alt="" class="forecast-table-img" />
+            <span id="forecast-table-day2-temp" class="forecast-table-temp">45&deg;/45&deg;</span>
+          </div>
+          <div class="forecast-table-day">
+            <h3 class="forecast-table-item">Wednesday</h3>
+            <img id="forecast-table-day3-img" src="images/logo.png" alt="" class="forecast-table-img" />
+            <span id="forecast-table-day3-temp" class="forecast-table-temp">45&deg;/45&deg;</span>
+          </div>
+          <div class="forecast-table-day">
+            <h3 class="forecast-table-item">Thursday</h3>
+            <img id="forecast-table-day4-img" src="images/logo.png" alt="" class="forecast-table-img" />
+            <span id="forecast-table-day4-temp" class="forecast-table-temp">45&deg;/45&deg;</span>
+          </div>
+          <div class="forecast-table-day">
+            <h3 class="forecast-table-item">Friday</h3>
+            <img id="forecast-table-day5-img" src="images/logo.png" alt="" class="forecast-table-img" />
+            <span id="forecast-table-day5-temp" class="forecast-table-temp">45&deg;/45&deg;</span>
+          </div>
+        </section>
+      </section>
+      <section class="main-article">
+        <h2 class="main-article-heading">Article Title</h2>
+        
+        <p class="main-article-passage">
+          <img src="https://www.prestonidaho.net/wp-content/uploads/2017/07/slider1.jpg" alt="" class="main-article-img" />
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+          eveniet quas necessitatibus odit, eius quasi earum cum quidem quo sed
+          dolore vero libero! Eligendi, ipsam rerum? Iure, distinctio at tempore
+          exercitationem repellat quaerat magni rem delectus sed, dolor
+          doloremque ipsum quos laborum cupiditate libero sit quas. Odio
+          dolorum, repellendus delectus sequi quisquam autem provident adipisci
+          accusamus cupiditate ratione, saepe enim, distinctio sapiente
+          voluptate labore earum! Officia quia deserunt natus.
+          
+        </p>
+        
+      </section>
+      <section class="main-events">
+        <h2 class="main-events-heading" id="main-events-heading">Events</h2>
+      </section>
+      <section class="main-contact">
+        <h2 class="main-contact-heading">Contact Us</h2>
+        <section class="main-contact-info">
+          <section class="main-contact-address">
+            <h3 class="main-contact-address-heading">Address:</h3>
+            <p>The Weather Center</p>
+            <p>123 Main Street.</p>
+            <p>Franklin, MI 87654</p>
+          </section>
+          <section class="main-contact-phone">
+            <h3 class="main-contact-phone-heading">Phone:</h3>
+            <p>(801)123-4567</p>
+          </section>
+          <section class="main-contact-email">
+            <h3 class="main-contact-email-heading">Email:</h3>
+            <p>contact@mail.com</p>
+          </section>
+          <section class="main-contact-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47367.499769178794!2d-111.877824!3d42.097431!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1635029141570!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </section>
+        </section>
+
+      </section>
+    </main>
+    <footer>
+      <!-- max 70rem -->
+      <!-- centered in page -->
+      <!-- date in JS -->
+      <p>&copy; Spencer Powell &bull; <span id="date">DATE</span></p>
+    </footer>
+
+    <script src="js/weather-api.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
 </html>

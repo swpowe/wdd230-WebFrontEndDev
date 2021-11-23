@@ -125,7 +125,7 @@ main li {
 .main-contact-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 50px 4fr;
+  grid-template-rows: 50px 50px auto;
   padding: 5px;
 }
 
@@ -147,14 +147,20 @@ main li {
 }
 
 .main-contact-map {
+  text-align: center;
   grid-column: 1 / 3;
   grid-row: 3 / 4;
   padding-top: 10px;
   margin-left: -5px;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 40px;
 }
 
-iframe {
-  max-width: 200px;
+iframe { /*!! move to med */
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
 }
 
 /*----------- FORM --------------*/

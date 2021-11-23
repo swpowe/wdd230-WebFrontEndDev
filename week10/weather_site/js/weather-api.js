@@ -1,9 +1,20 @@
 const apiURL = "https://api.openweathermap.org/data/2.5/";
 const apiKEY = "c9d68fbf2ae49e0738af3fb4229133ea";
-const cityId = [5604473];
+let cityId = 5604473;
+page = window.location.pathname;
 
-let urlWeather = `${apiURL}weather?id=${cityId[0]}&appid=${apiKEY}&units=imperial`;
-let urlForecast = `${apiURL}forecast?id=${cityId[0]}&appid=${apiKEY}&units=imperial`;
+if(page.includes("fish")) {
+  cityId = 5585000;
+}else if(page.includes('preston')) {
+  cityId = 5604473;
+}else if(page.includes('soda')) {
+  cityId = 5607916;
+}
+
+console.log(`CityId is: ${cityId}`);
+
+let urlWeather = `${apiURL}weather?id=${cityId}&appid=${apiKEY}&units=imperial`;
+let urlForecast = `${apiURL}forecast?id=${cityId}&appid=${apiKEY}&units=imperial`;
 
 fetch(urlWeather)
   .then((response) => response.json())
