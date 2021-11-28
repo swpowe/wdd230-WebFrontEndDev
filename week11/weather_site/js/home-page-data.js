@@ -96,7 +96,7 @@ const main = document.getElementById('pages');
 
 data.towns.forEach(e => {
     let townName = document.createElement('h2');
-    let townTag = document.createElement('p');
+    let townTag = document.createElement('h5');
     let townImg = document.createElement('img');
     let townFounded = document.createElement('h2');
     let townPop = document.createElement('h2');
@@ -115,6 +115,7 @@ data.towns.forEach(e => {
     townName.innerText = e.name;
     townTag.innerText = e.motto;
     townImg.src = e.photo;
+    townImg.alt = e.photo + " city photo.";
     townFounded.innerText = `Year founded: ${e.yearFounded}`;
     townPop.innerText = `Population: ${e.currentPopulation}`;
     townRain.innerText = `Annual Rain Fall: ${e.averageRainfall} "`;

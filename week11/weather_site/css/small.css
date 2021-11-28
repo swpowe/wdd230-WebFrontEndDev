@@ -304,6 +304,25 @@ footer {
   padding-bottom: 20px;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+figcaption {
+  background-color: rgba(40, 40, 40, 0.25);
+  padding: 10px 5px;
+  border-radius: 0 0 5px 5px;
+  text-transform: capitalize;
+}
+
+.gallery-title {
+  padding-left: 20px;
+  margin: 10px 0;
+}
 #sidebar {
   /* display: none; */
 }
