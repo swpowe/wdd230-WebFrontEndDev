@@ -95,7 +95,8 @@ const data = {
 const main = document.getElementById('pages');
 
 data.towns.forEach(e => {
-    let townName = document.createElement('h2');
+    if(e.name === 'Preston' || e.name === 'Soda Springs' || e.name === 'Fish Haven') {
+      let townName = document.createElement('h2');
     let townTag = document.createElement('p');
     let townImg = document.createElement('img');
     let townFounded = document.createElement('h2');
@@ -131,5 +132,6 @@ data.towns.forEach(e => {
     main.appendChild(heading);
     main.appendChild(holder);
     main.appendChild(info);
+    }
 
 });
