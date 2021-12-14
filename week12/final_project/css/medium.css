@@ -2,4 +2,11 @@
   body {
     background-color: pink;
   }
+
+  /* #region Directory Page */
+  nav.directory {
+    display: block; /* Hide Expand / Collapse option */
+  }
+
+  /* #endregion */
 }

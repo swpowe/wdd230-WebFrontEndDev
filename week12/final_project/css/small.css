@@ -7,3 +7,19 @@
 body {
   background-color: yellow;
 }
+
+/* #region NavBar */
+nav a.active {
+  background-color: pink;
+}
+
+/* #endregion */
+
+
+/* #region Directory Page */
+nav.directory {
+  display: none; /* Hide Expand / Collapse option */
+}
+
+/* #endregion */
+

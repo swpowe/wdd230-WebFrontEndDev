@@ -5,21 +5,65 @@
 - a list of the board of directors
  -->
 
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chamber of Commerce | Contact Us</title>
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/small.css">
-    <link rel="stylesheet" href="/css/medium.css">
-    <link rel="stylesheet" href="/css/large.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/small.css" />
+    <link rel="stylesheet" href="/css/medium.css" />
+    <link rel="stylesheet" href="/css/large.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Contact Us</h1>
+      <section class="contact-info">
+        <div class="contact-info phone">
+          <h2>Phone:</h2>
+          <p>(801) 804-4500</p>
+        </div>
+        <div class="contact-info email">
+          <h2>Email:</h2>
+          <p>spanishforkcity@spanishfork.org</p>
+        </div>
+        <div class="contact-info address">
+          <h2>Address:</h2>
+          <p>Spanish Fork City</p>
+          <p>40 S Main St.</p>
+          <p>Spanish Fork UT 84660</p>
+        </div>
+        <div class="contact-info map">
+          <h2>Directions:</h2>
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48822.146083832!2d-111.66641737466288!3d40.11144222672831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874db9d7dc27d89d%3A0x8b6bd315d9f959d0!2sSpanish%20Fork%2C%20UT%2084660!5e0!3m2!1sen!2sus!4v1639432645459!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="contact-form">
+        <form action="contact-thank-you.html">
+            <label for="full-name">
+                Full Name*
+                <input type="text" name="full-name" id="full-name" required>
+            </label>
+            <label for="phone">
+                Phone Number*
+                <input type="tel" name="phone" id="phone" required>
+            </label>
+            <label for="email">
+                Email*
+                <input type="email" name="email" id="email" required>
+            </label>
+            <label for="comment">
+                Comment
+                <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+            </label>
+            <button type="submit">Contact Us</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
