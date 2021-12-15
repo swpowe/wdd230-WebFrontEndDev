@@ -1,131 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chamber of Commerce | Join Us</title>
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/small.css">
-    <link rel="stylesheet" href="/css/medium.css">
-    <link rel="stylesheet" href="/css/large.css">
-</head>
-<body>
-        <!-- HEADER -->
-        <header>
-            <nav>
-              <div class="nav-menubar-header">
-                <button onclick="toggleMenu()">&#9776;</button>
-                <img src="images/city_logo.png" alt="city logo" />
-              </div>
-              <ul id="primary-nav" class="hide">
-                <li><a class="active" href="/">Home</a></li>
-                <li><a href="spanish_fork.html">City</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-          </header>
-          <!-- END HEADER -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/small.css" />
+    <link rel="stylesheet" href="/css/medium.css" />
+    <link rel="stylesheet" href="/css/large.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <div class="nav-menubar-header">
+          <button onclick="toggleMenu()">&#9776;</button>
+          <img src="images/city_logo.png" alt="city logo" />
+        </div>
+        <ul id="primary-nav" class="hide">
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="spanish_fork.html">City</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- END HEADER -->
     <main>
-       <form action="join-thank-you.html" method="get">
-           <fieldset>
-               <legend>Your Information</legend>
-               <label for="first-name">
-                   First Name*
-                   <input type="text" name="first-name" id="first-name" required>
-               </label>
-               <label for="last-name">
-                   Last Name*
-                   <input type="text" name="last-name" id="last-name" required>
-               </label>
-               <label for="title">
-                   Title
-                   <input type="text" name="title" id="title">
-               </label>
-               <label for="email">
-                   Email*
-                   <input type="email" name="email" id="email" required>
-               </label>
-               <label for="phone">
-                   Cell Phone
-                   <input type="tel" name="phone" id="phone">
-               </label>
-           </fieldset>
-           <fieldset>
-               <legend>Company Information</legend>
-               <label for="business-name">
-                Business Name*
-                <input type="text" name="business-name" id="business-name" required>
-            </label>
-            <label for="business-address">
-                Business Address
-                <input type="text" name="business-address" id="business-address">
-            </label>
-            <label for="business-website">
-                Business Website
-                <input type="url" name="business-website" id="business-website">
-            </label>
-            <label for="business-description">
-                Business Description
-                <textarea name="business-description" id="business-description" cols="30" rows="5"></textarea>
-            </label>
-           </fieldset>
-           <fieldset>
-            <legend>Membership Level</legend>
-            <p>Please select a membership level:</p>
-            <label for="non-profit">
-                Non-profit ($100)
-                <input type="radio" name="membership-level" value="non-profit" onchange="handleChange(this)" checked required>
-            </label>
-            <label for="bronzet">
-                Bronze ($200)
-                <input type="radio" name="membership-level" value="bronze" onchange="handleChange(this)">
-            </label>
-            <label for="silver">
-                Silver ($400)
-                <input type="radio" name="membership-level" value="silver" onchange="handleChange(this)">
-            </label>
-            <label for="gold">
-                Gold ($1000)
-                <input type="radio" name="membership-level" value="gold" onchange="handleChange(this)">
-            </label>
-            <label for="membership-desc">
-                Membership Info
-                <textarea name="membership-desc" id="membership-desc" cols="30" rows="2" readonly>Non-profit includes magic stuff.</textarea>
-            </label>
+      <form action="join-thank-you.html" method="get">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="first-name">
+            First Name*
+            <input type="text" name="first-name" id="first-name" required />
+          </label>
+          <label for="last-name">
+            Last Name*
+            <input type="text" name="last-name" id="last-name" required />
+          </label>
+          <label for="title">
+            Title
+            <input type="text" name="title" id="title" />
+          </label>
+          <label for="email">
+            Email*
+            <input type="email" name="email" id="email" required />
+          </label>
+          <label for="phone">
+            Cell Phone
+            <input type="tel" name="phone" id="phone" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Company Information</legend>
+          <label for="business-name">
+            Business Name*
+            <input
+              type="text"
+              name="business-name"
+              id="business-name"
+              required
+            />
+          </label>
+          <label for="business-address">
+            Business Address
+            <input type="text" name="business-address" id="business-address" />
+          </label>
+          <label for="business-website">
+            Business Website
+            <input type="url" name="business-website" id="business-website" />
+          </label>
+          <label for="business-description">
+            Business Description
+            <textarea
+              name="business-description"
+              id="business-description"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Membership Level</legend>
+          <p>Please select a membership level:</p>
+          <label for="non-profit">
+            Non-profit ($100)
+            <input
+              type="radio"
+              name="membership-level"
+              value="non-profit"
+              onchange="handleChange(this)"
+              checked
+              required
+            />
+          </label>
+          <label for="bronzet">
+            Bronze ($200)
+            <input
+              type="radio"
+              name="membership-level"
+              value="bronze"
+              onchange="handleChange(this)"
+            />
+          </label>
+          <label for="silver">
+            Silver ($400)
+            <input
+              type="radio"
+              name="membership-level"
+              value="silver"
+              onchange="handleChange(this)"
+            />
+          </label>
+          <label for="gold">
+            Gold ($1000)
+            <input
+              type="radio"
+              name="membership-level"
+              value="gold"
+              onchange="handleChange(this)"
+            />
+          </label>
+          <label for="membership-desc">
+            Membership Info
+            <textarea
+              name="membership-desc"
+              id="membership-desc"
+              cols="30"
+              rows="2"
+              readonly
+            >
+Non-profit includes magic stuff.</textarea
+            >
+          </label>
         </fieldset>
         <button type="submit">Join</button>
-       </form> 
-
+      </form>
     </main>
-        <!-- FOOTER -->
-        <footer>
-            <section class="footer-info">
-              <p class="copyright">© 2021 - Spencer Powell</p>
-              <ul>
-                <li>
-                  <a href="https://facebook.com" target="_blank"
-                    ><img
-                      src="images/social/f_logo_RGB-Blue_400.png"
-                      alt="facebook link"
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com" target="_blank"
-                    ><img
-                      src="images/social/Twitter social icons - circle - blue.png"
-                      alt="twitter link"
-                  /></a>
-                </li>
-              </ul>
-            </section>
-            <p>Page last modified: <span id="last-modified"></span></p>
-          </footer>
-          <!-- END FOOTER -->
-          <script src="js/toggle-menu.js"></script>
+    <!-- FOOTER -->
+    <footer>
+      <section class="footer-info">
+        <p class="copyright">© 2021 - Spencer Powell</p>
+        <ul>
+          <li>
+            <a href="https://facebook.com" target="_blank"
+              ><img
+                src="images/social/f_logo_RGB-Blue_400.png"
+                alt="facebook link"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank"
+              ><img
+                src="images/social/Twitter social icons - circle - blue.png"
+                alt="twitter link"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <p>Page last modified: <span id="last-modified"></span></p>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="js/toggle-menu.js"></script>
     <script src="./js/membership.js"></script>
-</body>
+    <script src="js/media-query.js"></script>
+  </body>
 </html>
