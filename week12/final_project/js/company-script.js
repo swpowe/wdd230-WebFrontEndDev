@@ -1,20 +1,28 @@
-console.log("loaded");
+console.log("Company Script Loaded.");
 
 // import data from "./test.json" assert { type: "json" }; //!!ES6 option
 // data = JSON.parse(test);
 // console.log(JSON.stringify(data.name))
 
-fetch("js/data.json")
+fetch("js/companyData.json")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
+    // Get the current page
+    let page = window.location.pathname;
+
+    let numToDisplay = 3;
+
+    if (!page.includes('index')) {
+      numToDisplay = data.companies.length;
+    }
 
     // get main div ID to append everything to
     // div for each company
     // icon div at same level
     let main = document.getElementById('city-directory-main');
 
-    for (let i = 0; i < data.companies.length; i++) {
+    for (let i = 0; i < numToDisplay; i++) {
         let logo = document.createElement('img');
         let name = document.createElement('h2');
         let bio = document.createElement('p');

@@ -1,44 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chamber of Commerce | Homepage</title>
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/small.css">
-    <link rel="stylesheet" href="/css/medium.css">
-    <link rel="stylesheet" href="/css/large.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/small.css" />
+    <link rel="stylesheet" href="/css/medium.css" />
+    <link rel="stylesheet" href="/css/large.css" />
+  </head>
+  <body>
     <!-- HEADER -->
     <header>
-        <nav>
-            <ul>
-                <li><a class="active" href="/">Home</a></li>
-                <li><a  href="spanish_fork.html">City</a></li>
-                <li><a  href="join.html">Join</a></li>
-                <li><a  href="directory.html">Directory</a></li>
-                <li><a  href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Spanish Fork City</h1>
+      <nav>
+        <div class="nav-menubar-header">
+          <button onclick="toggleMenu()">&#9776;</button>
+          <img src="images/city_logo.png" alt="city logo" />
+        </div>
+        <ul id="primary-nav" class="hide">
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="spanish_fork.html">City</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- END HEADER -->
+    <main class="home-main">
+      <section class="image-carousel">
+        <img
+          src="https://www.spanishfork.org/sliderimage/Frontpage/Thurber%20Resize.jpg"
+          alt="city image"
+        />
+      </section>
 
-
+      <section class="home-main-content">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus facilis numquam labore assumenda, delectus inventore distinctio mollitia reiciendis voluptatibus fuga voluptas debitis magnam illum nostrum, laboriosam ducimus molestiae. Temporibus, aut sapiente. Minima, ullam accusantium repellendus ratione eligendi nobis fugit corporis animi sunt laboriosam quo obcaecati inventore id ex repellat quisquam.</p>
+        <button class="accordion">Weather</button>
+        <div class="content">
+          <p>Current Temp: <span id="current-temp"></span></p>
+          <p>Current Condition Description: <span id="current-condition"></span></p>
+          <p>Humidity: <span id="current-humidity"></span></p>
+          <!-- Weather Alert that's closable popup? -->
+          <!-- Display and Label a 3 day forcast of the "day" temp from the current date -->
+          <div class="weather-forecast">
+            <p>3 Day forecast for <span id="forecast-current-day">Monday Dec 12</span></p>
+            <ul class="three-day-forecast">
+              <li>
+                <img src="https://via.placeholder.com/150"/>
+                <p id="day1">Monday</p>
+                <p id="day1-temp">98</p>
+              </li>
+              <li>
+                <img src="https://via.placeholder.com/150"/>
+                <p id="day1">Monday</p>
+                <p id="day2-temp">98</p>
+              </li>
+              <li>
+                <img src="https://via.placeholder.com/150"/>
+                <p id="day1">Monday</p>
+                <p id="day3-temp">98</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="accordion">About</button>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+            fugit eos voluptatem molestias veniam vel! Laboriosam pariatur rem
+            quas autem eius, impedit, quia, velit minus assumenda nihil
+            recusandae maiores. Labore aperiam cupiditate minima nobis earum?
+          </p>
+        </div>
+        <button class="accordion">Events</button>
+        <div class="content">
+          <section class="city-events" id="city-events"></section>
+        </div>
+        <button class="accordion">Information</button>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+            fugit eos voluptatem molestias veniam vel! Laboriosam pariatur rem
+            quas autem eius, impedit, quia, velit minus assumenda nihil
+            recusandae maiores. Labore aperiam cupiditate minima nobis earum?
+          </p>
+        </div>
+        <button class="accordion">Local Businesses</button>
+        <div class="content">
+            <section class="city-directory-main" id="city-directory-main">
+            </section>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer>
-        <p class="copyright">© 2021 - Spencer Powell</p>
-        <ul>
-            <li>fb</li>
-            <li>tw</li>
-        </ul>
+      <p class="copyright">© 2021 - Spencer Powell</p>
+      <ul>
+        <li>
+          <a href="https://facebook.com" target="_blank"
+            ><img
+              src="images/social/f_logo_RGB-Blue_400.png"
+              alt="facebook link"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com" target="_blank"
+            ><img
+              src="images/social/Twitter social icons - circle - blue.png"
+              alt="twitter link"
+          /></a>
+        </li>
+      </ul>
     </footer>
     <!-- END FOOTER -->
 
-    
-</body>
+    <script src="js/homepage-script.js"></script>
+    <script src="js/events-script.js"></script>
+    <script src="js/company-script.js"></script>
+  </body>
 </html>

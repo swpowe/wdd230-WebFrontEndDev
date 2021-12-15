@@ -1,0 +1,39 @@
+{
+  "events": [
+    {
+      "event": "Festival of Lights",
+      "description": "A winter wonderland in the park.",
+      "date": "Nov 28 - Dec 31"
+    },
+    {
+      "event": "Letters to Santa",
+      "description": "Come write a letter to Santa!",
+      "date": "Dec 12"
+    },
+    {
+      "event": "Recycle Pickup",
+      "description": "",
+      "date": "Dec 20"
+    },
+    {
+      "event": "City Council Meeting",
+      "description": "Let your voice be heard.",
+      "date": "Dec 21"
+    },
+    {
+      "event": "Christmas - Offices Closed",
+      "description": "Enjoy this holiday season.",
+      "date": "Dec 23"
+    },
+    {
+      "event": "Christmas - Offices Closed",
+      "description": "Enjoy this holiday season.",
+      "date": "Dec 24"
+    },
+    {
+      "event": "New Years Day (Observed) - Offices Closed",
+      "description": "Welcome to 2022!",
+      "date": "Dec 31"
+    }
+  ]
+}
