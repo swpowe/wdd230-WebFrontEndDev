@@ -92,7 +92,6 @@ fetch(urlWeather)
     }
   });
 
-const mediaQueryList = window.matchMedia("(min-width: 640px)");
 
 function expandContent(list) {
   if(list.matches) {

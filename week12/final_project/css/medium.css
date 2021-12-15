@@ -26,6 +26,10 @@
     padding: 0 10px;
   }
 
+  .hide {
+    /* display: inline; */
+  }
+
   /* #endregion */
 
 
@@ -35,17 +39,30 @@
   }
 
   .content {
-    /* min-height: 244px; */
+    /* min-height: 240px; */
+    /* weather - 224,about - 643, events 224?, info - 73, local-602 */
     /* overflow: auto; */
   }
 
-  #local-business {
+  /* #local-business {
     /* min-height: 2044px;  */
     /* overflow: auto; */
+  /* } */
+/* 
+  .home-main-content > div:nth-child(2) {
+    max-height: 224px;
   }
-
-  /* .home-heading {
-    display: block;
+  .home-main-content > div:nth-child(3) {
+    max-height: 643px;
+  }
+  .home-main-content > div:nth-child(4) {
+    max-height: 224px;
+  }
+  .home-main-content > div:nth-child(5) {
+    max-height: 73px;
+  }
+  .home-main-content > div:nth-child(6) {
+    max-height: 602px;
   } */
 
   /* #endregion */
