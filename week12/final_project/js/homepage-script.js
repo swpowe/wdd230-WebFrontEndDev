@@ -100,10 +100,10 @@ function expandContent(list) {
     // Object.keys(buttons).forEach((button) => {
     //   button.click()
     // })
-    for (let i = 0; i < buttons.length; i++) {
-      buttons[i].click();
+    // for (let i = 0; i < buttons.length; i++) {
+    //   buttons[i].click();
       
-    }
+    // }
   }
 }
 
