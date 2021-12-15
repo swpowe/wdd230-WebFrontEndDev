@@ -4,8 +4,21 @@
   padding: 0;
 }
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body {
   background-color: yellow;
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between; */
 }
 
 /* #region NavBar */
@@ -13,21 +26,32 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 8px 2px;
+  padding: 8px 2px 0 2px;
 }
 .nav-menubar-header button {
-  min-width: 15vw;
+  border:none;
+  background-color: gray;
+  border-radius: 5px 5px 0 0;
+  min-width: 12vw;
+  /* max-height: 6vh; */
 }
 .nav-menubar-header img {
   height: 50px;
 }
 
-nav ul{
+nav ul {
+  background-color: gray;
+  border-radius: 0 5px 5px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   list-style-type: none;
   padding: 10px 0;
+  max-width: fit-content;
+}
+
+#primary-nav {
+  margin-left: 2px;
 }
 
 nav a {
@@ -38,7 +62,7 @@ nav li:hover {
   background-color: yellow;
 }
 nav a.active {
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .hide {
@@ -52,9 +76,22 @@ nav.directory {
   display: none; /* Hide Expand / Collapse option */
 }
 
+.city-directory-main {
+}
+
+.city-directory-main img {
+  padding-top: 20px;
+  max-height: 20vh;
+}
+
+
 /* #endregion */
 
 /* #region Home Page */
+
+.home-main {
+  min-height: 82vh
+}
 
 button.active {
   background-color: blue;
@@ -67,7 +104,7 @@ button.active {
 }
 
 .home-main-content {
-  padding: 5px 2px
+  padding: 5px 5px
 }
 
 .content {
