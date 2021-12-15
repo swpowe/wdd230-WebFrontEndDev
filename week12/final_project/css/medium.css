@@ -3,6 +3,53 @@
     background-color: pink;
   }
 
+  /* #region Nav Bar */
+  header {
+    padding: 5px 10px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex: row;
+  }
+
+  .nav-menubar-header button {
+    display: none;
+  }
+
+  nav ul {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    padding: 0 10px;
+  }
+
+  /* #endregion */
+
+
+  /* #region Home */
+  .accordion {
+    /* display: none; */
+  }
+
+  .content {
+    /* min-height: 244px; */
+    /* overflow: auto; */
+  }
+
+  #local-business {
+    /* min-height: 2044px;  */
+    /* overflow: auto; */
+  }
+
+  /* .home-heading {
+    display: block;
+  } */
+
+  /* #endregion */
+
   /* #region Directory Page */
   nav.directory {
     display: block; /* Hide Expand / Collapse option */

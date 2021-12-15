@@ -15,10 +15,6 @@ Object.keys(buttons).forEach((button) => {
   });
 });
 
-function toggleMenu() {
-  document.getElementById("primary-nav").classList.toggle("hide");
-}
-
 // >>>>>>>>>>>>>>>>>>>>>>>>>.
 
 let page = window.location.pathname;
@@ -91,8 +87,25 @@ fetch(urlWeather)
       jsObject.daily[3].temp.day
     )}\xB0`;
 
-    if(jsObject.alerts != null) {
-      alert(jsObject.alerts.description)
-    } 
-    
+    if (jsObject.alerts != null) {
+      alert(jsObject.alerts.description);
+    }
   });
+
+const mediaQueryList = window.matchMedia("(min-width: 640px)");
+
+function expandContent(list) {
+  if(list.matches) {
+    // document.body.style.backgroundColor = "purple";
+    // Object.keys(buttons).forEach((button) => {
+    //   button.click()
+    // })
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].click();
+      
+    }
+  }
+}
+
+expandContent(mediaQueryList);
+mediaQueryList.addEventListener('change', expandContent);

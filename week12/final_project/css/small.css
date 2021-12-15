@@ -30,7 +30,7 @@ body {
 }
 .nav-menubar-header button {
   border:none;
-  background-color: gray;
+  background-color: rgb(206, 206, 206);
   border-radius: 5px 5px 0 0;
   min-width: 12vw;
   /* max-height: 6vh; */
@@ -40,7 +40,7 @@ body {
 }
 
 nav ul {
-  background-color: gray;
+  background-color: rgb(206, 206, 206);
   border-radius: 0 5px 5px 5px;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,6 @@ nav a.active {
 }
 /* #endregion */
 
-
 /* #region Directory Page */
 nav.directory {
   display: none; /* Hide Expand / Collapse option */
@@ -90,12 +89,19 @@ nav.directory {
 /* #region Home Page */
 
 .home-main {
-  min-height: 82vh
+  min-height: 80vh
+}
+
+.home-main button {
+  color: #f91c24;
+  width: 100%;
+  padding: 5px;
+  margin: 2px;
 }
 
 button.active {
-  background-color: blue;
-  color: pink;
+  background-color: rgba(162, 161, 161, 0.762);
+  color: #f91c24;
   width: 100%;
 }
 
@@ -149,27 +155,40 @@ button.active {
 
 /* #endregion */
 
-
 /* #region Footer */
 footer {
   background-color: pink;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding: 5px 10px;
-  align-items: center;
+  text-align: end;
 }
 
-footer > ul {
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* footer > ul {
   margin-right: -50px;
-}
+} */
 
-footer > ul > li {
+.footer-info > ul > li {
   display: inline;
 }
 
+.copyright {
+  padding-top: 5px;
+}
 
-footer > ul > li > a > img {
+#last-modified {
+  padding-right: 20px;
+}
+
+
+.footer-info > ul > li > a > img {
   width: 20%;
   padding-top: 4px;
 }

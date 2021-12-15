@@ -119,7 +119,7 @@
           </p>
         </div>
         <button class="accordion">Local Businesses</button>
-        <div class="content">
+        <div class="content" id="local-business">
           <section
             class="city-directory-main"
             id="city-directory-main"
@@ -130,28 +130,33 @@
 
     <!-- FOOTER -->
     <footer>
-      <p class="copyright">© 2021 - Spencer Powell</p>
-      <ul>
-        <li>
-          <a href="https://facebook.com" target="_blank"
-            ><img
-              src="images/social/f_logo_RGB-Blue_400.png"
-              alt="facebook link"
-          /></a>
-        </li>
-        <li>
-          <a href="https://twitter.com" target="_blank"
-            ><img
-              src="images/social/Twitter social icons - circle - blue.png"
-              alt="twitter link"
-          /></a>
-        </li>
-      </ul>
+      <section class="footer-info">
+        <p class="copyright">© 2021 - Spencer Powell</p>
+        <ul>
+          <li>
+            <a href="https://facebook.com" target="_blank"
+              ><img
+                src="images/social/f_logo_RGB-Blue_400.png"
+                alt="facebook link"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank"
+              ><img
+                src="images/social/Twitter social icons - circle - blue.png"
+                alt="twitter link"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <p>Page last modified: <span id="last-modified"></span></p>
     </footer>
     <!-- END FOOTER -->
 
+    <script src="js/toggle-menu.js"></script>
     <script src="js/homepage-script.js"></script>
     <script src="js/events-script.js"></script>
     <script src="js/company-script.js"></script>
+    <script src="js/last-modified-script.js"></script>
   </body>
 </html>
