@@ -20,9 +20,9 @@
           <img src="images/city_logo.png" alt="city logo" />
         </div>
         <ul id="primary-nav" class="hide">
-          <li><a class="active" href="/">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="spanish_fork.html">City</a></li>
-          <li><a href="join.html">Join</a></li>
+          <li><a class="active" href="join.html">Join</a></li>
           <li><a href="directory.html">Directory</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -89,6 +89,7 @@
           <label for="non-profit">
             Non-profit ($100)
             <input
+            id="non-profit"
               type="radio"
               name="membership-level"
               value="non-profit"
@@ -97,9 +98,10 @@
               required
             />
           </label>
-          <label for="bronzet">
+          <label for="bronze">
             Bronze ($200)
             <input
+            id="bronze"
               type="radio"
               name="membership-level"
               value="bronze"
@@ -109,6 +111,7 @@
           <label for="silver">
             Silver ($400)
             <input
+            id="silver"
               type="radio"
               name="membership-level"
               value="silver"
@@ -118,6 +121,7 @@
           <label for="gold">
             Gold ($1000)
             <input
+            id="gold"
               type="radio"
               name="membership-level"
               value="gold"
@@ -133,7 +137,7 @@
               rows="2"
               readonly
             >
-Non-profit includes magic stuff.</textarea
+Non-profit includes a listing on our sponsor page.</textarea
             >
           </label>
         </fieldset>
@@ -155,7 +159,7 @@ Non-profit includes magic stuff.</textarea
           <li>
             <a href="https://twitter.com" target="_blank"
               ><img
-                src="images/social/Twitter social icons - circle - blue.png"
+                src="images/social/Twitter.png"
                 alt="twitter link"
             /></a>
           </li>
@@ -167,5 +171,6 @@ Non-profit includes magic stuff.</textarea
     <script src="js/toggle-menu.js"></script>
     <script src="./js/membership.js"></script>
     <script src="js/media-query.js"></script>
+    <script src="js/last-modified-script.js"></script>
   </body>
 </html>

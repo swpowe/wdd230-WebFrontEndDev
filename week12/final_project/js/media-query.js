@@ -10,7 +10,7 @@ function expandContent(list) {
     let contentDivs = document.getElementsByClassName('content');
     for (let i = 0; i < contentDivs.length; i++) {
       // buttons[i].click();
-      let height = ['224px', '643px', '224px', '80px', '876px'];
+      let height = ['224px', '700px', '600px', '80px', '1400px'];
       // 224,about - 643, events 224?, info - 73, local-602 */
       contentDivs[i].classList.add("active");
       contentDivs[i].style.maxHeight = height[i];

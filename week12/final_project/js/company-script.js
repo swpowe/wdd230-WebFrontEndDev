@@ -9,7 +9,7 @@ fetch("js/companyData.json")
 
     let numToDisplay = 3;
 
-    if (!page.includes('index')) {
+    if (page.includes('directory')) {
       numToDisplay = data.companies.length;
     }
 
@@ -25,6 +25,11 @@ fetch("js/companyData.json")
         let a = document.createElement('a');
 
         container.classList.add('business-container');
+        logo.classList.add('business-container-item');
+        bio.classList.add('business-container-item');
+        address.classList.add('business-container-item');
+        url.classList.add('business-container-item');
+        a.classList.add('business-container-item');
 
         logo.src = data.companies[i].logo;
         logo.alt = ' company logo'
@@ -46,3 +51,27 @@ fetch("js/companyData.json")
         main.appendChild(container);
     }
   });
+
+  function grid() {
+    let main = document.getElementsByClassName('city-directory-list');
+    main[0].classList.add('city-directory-main');
+    main[0].classList.remove('city-directory-list');
+  }
+
+  function list() {
+    let main = document.getElementsByClassName('city-directory-main');
+    main[0].classList.add('city-directory-list');
+    main[0].classList.remove('city-directory-main');
+    let items = document.getElementsByClassName('business-container');
+    for (let i = 0; i < items.length; i++) {
+      items[i].style.margin = "0 5px";
+    }
+    let parents = document.getElementsByClassName('business-container');
+    for (let i = 0; i < parents.length; i++) {
+      parents[i].style.maxWidth = '135px';
+      parents[i].style.textAlign = 'center';
+      let img = parents[i].querySelector('img');
+      img.style.maxWidth = "10vw";
+      
+    }
+  }

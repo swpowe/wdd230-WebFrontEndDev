@@ -1,6 +1,10 @@
 @media screen and (min-width: 640px) {
   body {
-    background-color: pink;
+    /* background-color: pink; */
+  }
+
+  body p {
+    word-wrap: break-word;
   }
 
   /* #region Nav Bar */
@@ -10,7 +14,7 @@
   nav {
     display: flex;
     justify-content: space-between;
-    flex: row;
+    /* flex: row; */
   }
 
   .nav-menubar-header button {
@@ -25,6 +29,49 @@
   nav ul li {
     padding: 0 10px;
   }
+
+  nav ul {
+    background-color: #dc0a11;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px 0;
+    max-width: fit-content;
+  }
+
+input,
+textarea {
+  max-width: 255px;
+}
+
+
+
+/* .directory-list {
+
+} */
+
+
+
+/*  */
+/* nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+} */
+/* nav li a:hover {
+  border-radius: 2px;
+  background-color: #b80c12;
+} */
+/* nav a.active {
+  color: #dc0a11;
+  background-color: white;
+  border-radius: 2px;
+} */
+
+/*  */
 
   .hide {
     /* display: inline; */
@@ -71,6 +118,50 @@
   nav.directory {
     display: block; /* Hide Expand / Collapse option */
   }
+
+  /* .city-directory-main {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .directory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .directory-options {
+    display: flex;
+  
+  }
+
+  .city-directory-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
+  }
+
+  .city-directory-list{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    padding: 0;
+  }
+
+  .business-container .list{
+   max-width: 135px;
+   text-align: center;
+  }
+
+  .business-container img.list {
+    max-width: 10vw;
+  }
+
+  .business-container p.list {
+    word-wrap: break-word;
+  }
+  
 
   /* #endregion */
 }
