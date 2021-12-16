@@ -5,4 +5,18 @@
     max-width: 70vw;
     margin: 0 auto;
   }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+  }
 }

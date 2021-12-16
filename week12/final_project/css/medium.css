@@ -161,6 +161,15 @@ textarea {
   .business-container p.list {
     word-wrap: break-word;
   }
+
+  /* label {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-form {
+    margin: 0 auto;
+  } */
   
 
   /* #endregion */
