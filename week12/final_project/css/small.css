@@ -74,7 +74,7 @@ nav a {
 
 nav li a:hover {
   /* padding-top: 6px; */
-  color: #bd2c31;
+  color: blue;
 }
 
 nav a.active {
